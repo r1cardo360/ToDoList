@@ -1,0 +1,139 @@
+:root{
+    --cor-de-fundo:#947668cc;
+    --cor-do-botao:#652709;
+    --cor-da-lista:#be7b6c;
+
+}
+
+body{
+    background: url('/img/background\ celular.jpg');
+    background-size: cover;
+}
+
+main{
+    
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container{
+    margin-top: 40px;
+    background-color: var(--cor-de-fundo);
+    width:80%;
+    border-radius: 10px;
+    -webkit-box-shadow: 6px 6px 23px 8px rgba(0,0,0,0.44);
+    -moz-box-shadow: 6px 6px 23px 8px rgba(0,0,0,0.44);
+    box-shadow: 6px 6px 23px 8px rgba(0,0,0,0.44);
+    padding: 15px;
+}
+
+div img{
+    width: 30px;
+    opacity: 0;
+}
+
+.caixaDeTexto{
+    box-sizing: border-box;
+    border: none;
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    padding-left: 15px;
+}
+
+.botaoEnviar{
+    border: none;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    background-color: var(--cor-do-botao);
+    color: #ffffff;
+}
+
+.ListaDeIntens{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    background-color: var(--cor-da-lista);
+    border-radius: 20px;
+    padding: 0px 10px;
+    margin:18px 0px;
+    font-size: 14px;
+}
+
+.ListaDeIntens:hover img{
+    opacity: 1;
+}
+
+.done{
+    background-color: #8fac55;
+    text-decoration: line-through;
+}
+
+@media(min-width:300px){
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .botaoEnviar{
+        width: 60%;
+        
+    }
+
+    .Tabela{
+        width:100%;
+    }
+
+}
+
+@media(min-width:300px){
+
+    .container{
+        display: block;
+    }
+
+    .caixaDeTexto{
+        width: 60%;
+    }
+
+    .botaoEnviar{
+        width: 30%;
+        float: right;
+    }
+}
+
+@media(min-width:500px){
+
+    .caixaDeTexto{
+        margin-left: 12%;
+        width: 50%;
+    }
+
+    .Tabela{
+    display: flex;
+    width: 101%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+
+    .ListaDeIntens{
+        width:80%;
+    }
+}
+
+@media(min-width:800px){
+    .container{
+        width: 45%;
+    }
+}
