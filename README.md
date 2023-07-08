@@ -9,4 +9,4 @@ vai colocar sua tarefa no local storage do navegador assim toda vez que resetar 
 pagina, atualizar ou fechar a sua lista vai ficar salva.
 
 #Acessar entre neste link e veja a aplicação
-link: 
+link: https://todolistric.netlify.app
